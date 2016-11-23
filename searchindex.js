@@ -1,0 +1,1 @@
+Search.setIndex({envversion:47,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{"\u6587\u7ae0\u306f\u3053\u3053":0,content:0},titles:["Welcome to notebook!"],titleterms:{"\u3053\u3053\u306b\u66f8\u3044\u3066\u3044\u304f":0,notebook:0,welcom:0}})

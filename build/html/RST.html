@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>reStructuredText入門 &mdash; notebook 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="notebook 1.0.0 documentation" href="index.html" />
+    <link rel="next" title="NUC5PPYHでいろいろ" href="NUC5PPYH.html" />
+    <link rel="prev" title="Welcome to notebook!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="restructuredtext">
+<h1>reStructuredText入門<a class="headerlink" href="#restructuredtext" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>最初はreStructuredText入門<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://docs.sphinx-users.jp/rest.html">http://docs.sphinx-users.jp/rest.html</a></p>
+<div class="section" id="id2">
+<h3>段落<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>ここを見ながら試してみる。</p>
+<p>ここは一つの段落。一行以上の改行を開けないと段落にならない。
+普通の改行だけだと段落の塊のまま。
+になるはず。
+ここもまだ。</p>
+<p>ここで段落になる。</p>
+</div>
+<div class="section" id="id3">
+<h3>インラインマークアップ<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>この段落ではインラインマークアップを試す。強調は <em>アスタリスク</em> 、強い強調は <strong>2つ</strong> 。
+<em>alphabet</em> なら <strong>motto</strong> わかりやすいかな。
+<em>単独</em>
+<code class="docutils literal"><span class="pre">固定長</span></code> アルファベットも
+<code class="docutils literal"><span class="pre">KOTEICHOU</span></code>
+<strong>解釈済み</strong>
+<cite>タイトルリファレンス</cite>
+<sub>下付き</sub>
+普通</p>
+<p>アスタリスクとバッククオートによる表現と、解釈済みテキストロールによる表現がある。</p>
+</div>
+<div class="section" id="id4">
+<h3>リスト表現<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>リストのマークアップ</p>
+<ul class="simple">
+<li>リスト</li>
+<li>リストに
+複数行<ul>
+<li>リスト</li>
+<li>リスト</li>
+</ul>
+</li>
+<li>子リストは親のリストから空行をあけないといけない</li>
+</ul>
+<ol class="arabic simple">
+<li>自動採番の</li>
+<li>リスト</li>
+</ol>
+<ol class="arabic simple">
+<li>This is a bulleted list.</li>
+<li>It has two items, the second
+item uses two lines.</li>
+</ol>
+<dl class="docutils">
+<dt>定義リストは</dt>
+<dd><p class="first">項目と改行後に先頭空白の説明文。複数行書くことはできない。ずううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううとお長くなったらどうなるのかな。</p>
+<p>いい感じのインデントのまま改行される模様。</p>
+<p class="last">複数パラグラフにもできる</p>
+</dd>
+<dt>次の定義語</dt>
+<dd>Google日本語入力あまり賢くないのでは。</dd>
+</dl>
+</div>
+<div class="section" id="id5">
+<h3>ブロック<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">These lines are</div>
+<div class="line">broken exactly like in</div>
+<div class="line">the source file.</div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body"><p class="first">2001-08-16</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Version:</th><td class="field-body"><p class="first">1</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body"><ul class="first simple">
+<li>Me</li>
+<li>Myself</li>
+<li>I</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Indentation:</th><td class="field-body"><p class="first">Since the field marker may be quite long, the second
+and subsequent lines of the field body do not have to line up
+with the first line, but they must be indented relative to the
+field name marker, and they must line up with each other.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameter i:</th><td class="field-body"><p class="first">integer</p>
+<p>ここで通常文章</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">a:</th><td class="field-body">ute</td>
+</tr>
+<tr class="field-even field"><th class="field-name">b:</th><td class="field-body">teto</td>
+</tr>
+</tbody>
+</table>
+<p>ここで通常文章</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">aa:</th><td class="field-body"><p class="first">et</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ccc:</th><td class="field-body"><p class="first">teo</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-a</span></kbd></td>
+<td><p class="first last">Output all.</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-b</span></kbd></td>
+<td><p class="first last">Output both (this description is
+quite long).</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-c <var>arg</var></span></kbd></td>
+<td><p class="first last">Output just arg.</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--long</span></kbd></td>
+<td><p class="first last">Output all day long.</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-p</span></kbd></td>
+<td><p class="first">This option has two paragraphs in the description.
+This is the first.</p>
+<p class="last">This is the second.  Blank lines may be omitted between
+options (as above) or left in (as here and below).</p>
+</td></tr>
+</tbody>
+</table>
+<p>あいだに普通の文章</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--very-long-option</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td><p class="first last">A VMS-style option.  Note the adjustment for
+the required two spaces.</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--an-even-longer-option</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td><p class="first last">The description can also start on the next line.</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-2</span>, <span class="option">--two</span></kbd></td>
+<td><p class="first last">This option has two variants.</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-f <var>FILE</var></span>, <span class="option">--file=<var>FILE</var></span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td><p class="first last">These two options are synonyms; both have
+arguments.</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">/V</span></kbd></td>
+<td><p class="first last">A VMS/DOS-style option.</p>
+</td></tr>
+</tbody>
+</table>
+<p class="last">John Doe wrote:</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&gt;&gt; Great idea!
+&gt;
+&gt; Why didn&#8217;t I think of that?</p>
+<p>You just did!  ;-)</p>
+<p>takes priority over Doctest block syntax:</p>
+<p>This is an ordinary paragraph.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s1">&#39;this is a Doctest block&#39;</span>
+<span class="go">this is a Doctest block</span>
+</pre></div>
+</div>
+<p>The following is a literal block:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">This</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">recognized</span> <span class="k">as</span> <span class="n">a</span> <span class="n">doctest</span> <span class="n">block</span> <span class="n">by</span>
+<span class="go">reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="go">module, though!</span>
+</pre></div>
+</div>
+<p>Indentation is not required for doctest blocks.</p>
+</div>
+<div class="section" id="id6">
+<h3>コロン2つでソースコード<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>This is a normal text paragraph. The next paragraph is a code sample:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>It is not processed in any way, except
+that the indentation is removed.
+
+It can span multiple lines.
+</pre></div>
+</div>
+<p>This is a normal text paragraph again.</p>
+<p>ここからもソースコード</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>インデントしないといけないのか
+タブでインデントできないのはなぜか
+</pre></div>
+</div>
+<p>なにか使い方を間違えているのか。</p>
+</div>
+<div class="section" id="id7">
+<h3>テーブル<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">CCCC</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>aa</td>
+<td>cc</td>
+<td>ttt</td>
+</tr>
+<tr class="row-odd"><td>aa</td>
+<td>cc</td>
+<td>ttt</td>
+</tr>
+<tr class="row-even"><td>aa</td>
+<td>cc</td>
+<td>ttt</td>
+</tr>
+<tr class="row-odd"><td>aa</td>
+<td>cc</td>
+<td>ttt</td>
+</tr>
+<tr class="row-even"><td>aa</td>
+<td>cc</td>
+<td>ttt</td>
+</tr>
+<tr class="row-odd"><td>aa</td>
+<td>cc</td>
+<td>ttt</td>
+</tr>
+<tr class="row-even"><td>aa</td>
+<td>cc</td>
+<td>ttt</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h3>ハイパーリンク<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>このページを参考に書いている。</p>
+<p><a class="reference external" href="http://docs.sphinx-users.jp/rest.html">http://docs.sphinx-users.jp/rest.html</a></p>
+<p><a class="reference external" href="http://docs.sphinx-users.jp/rest.html">このページ</a> を参考に書いている。ターゲットとリンクの分割版。<a class="reference external" href="http://docs.sphinx-users.jp/rest.html">このページ</a></p>
+<p><a class="reference external" href="http://docs.sphinx-users.jp/rest.html">ここのページ</a> を参考に書いている。ターゲット機能。</p>
+<p>慣習によると#が部、<a href="#id11"><span class="problematic" id="id12">*</span></a>(OL付き)が章、=がセクション、-がサブセクションらしい</p>
+<p>=を下手に使うと表になってしまう。</p>
+</div>
+<div class="section" id="id13">
+<h3>サブセクション<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>ここにサブセクションをつくってみた。</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">reStructuredText入門</a><ul>
+<li><a class="reference internal" href="#id1">最初はreStructuredText入門</a><ul>
+<li><a class="reference internal" href="#id2">段落</a></li>
+<li><a class="reference internal" href="#id3">インラインマークアップ</a></li>
+<li><a class="reference internal" href="#id4">リスト表現</a></li>
+<li><a class="reference internal" href="#id5">ブロック</a></li>
+<li><a class="reference internal" href="#id6">コロン2つでソースコード</a></li>
+<li><a class="reference internal" href="#id7">テーブル</a></li>
+<li><a class="reference internal" href="#id8">ハイパーリンク</a></li>
+<li><a class="reference internal" href="#id13">サブセクション</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to notebook!</a></li>
+      <li>Next: <a href="NUC5PPYH.html" title="next chapter">NUC5PPYHでいろいろ</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/RST.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, yusukeyusuke.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/RST.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
